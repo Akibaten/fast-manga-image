@@ -22,10 +22,8 @@ The tool for encoding and decoding FMI files is written entirely in Rust. Usage 
 
 ### Clone:
 ```
-```
 git clone https://github.com/Akibaten/fast-manga-image
 cd fast-manga-image
-```
 ```
 
 ### Build:
