@@ -28,9 +28,7 @@ cd fast-manga-image
 
 ### Build:
 ```
-```
 cargo install --path .
-```
 ```
 
 ### Run:
@@ -44,8 +42,7 @@ or
 fmi convert path/to/file_to_be_converted
 ```
 This will generate an FMI image with the same name and path as the input file
-```
-```
+
 Alternatively a name for an output file can be specified.
 ```
 fmi encode path/to/input_file output_file
