@@ -12,7 +12,7 @@ There are four types of chunks total, and the types and specifications for these
 
 To demonstrate the speed of FMI decoding, I have created a demo to show it rendering video in real time from a directory filled with frames of a video in .fmi format without an actual format. Each frame is read from memory as an image, decoded, and then painted to the viewer individually. This is at 60 frames per second, but given its speed it can go several times faster than this without dropping frames.
 
-![](fmi_demo.mov)
+https://github.com/Akibaten/fast-manga-image/blob/main/fmi_demo.mov
 
 ## Limitations
 FMI is gray scale by design, and while it performs similarly to PNG in size (often slightly worse). It has the advantage in massive gains for speed of decoding, and it was made with this in mind.
