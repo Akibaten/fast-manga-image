@@ -1,7 +1,13 @@
 # FMI - A fast image format for manga and comics.
 
 The FMI (fast manga image) format provides fast, lossless compression of gray scale images at speeds of around 10 times faster decoding and 6-10 times faster encoding than PNG and with comparable sizes (worse in images with very few gradients and better in images with lots of gradients). It is optimized for use in already gray scale formats like manga and other comics.
-The benchmark for conversion of an entire manga volume to .png vs to .fmi can be found below.
+The benchmark for decoding an entire manga volume of .png vs an entire volume of .fmi can be found below.
+
+__FMI Decoding__
+![FMI decoding](fmi-decode-benchmark.png)
+
+__PNG Decoding__
+![PNG](png-decode-benchmark.png)
 
 The recommended file extension for FMI is .fmi although this is not registered with MIME or reserved as a format. However, .fmi is not yet reserved in MIME by any format so collision with other files is unlikely.
 

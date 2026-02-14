@@ -123,30 +123,30 @@ fn main() {
             return;
         }
     };
-    //
-    // let monitor_height = 1000;
-    // let image_scale = (monitor_height as f32) / (height as f32);
-    //
-    // let mut window = Window::new(
-    //     "FMI Viewer - press ESC to exit",
-    //     ((width as f32) * image_scale) as usize,
-    //     ((height as f32) * image_scale) as usize,
-    //     WindowOptions {
-    //         ..WindowOptions::default()
-    //     }
-    // )
-    // .unwrap_or_else(|e| {
-    //     panic!("{}", e);
-    // });
-    //
-    // // Limit to max ~60 fps update rate
-    // window.set_target_fps(60);
-    //
-    // while window.is_open() && !window.is_key_down(Key::Escape) {
-    //
-    //     window
-    //         .update_with_buffer(&buffer, width as usize, height as usize)
-    //         .unwrap();
-    //
-    // }
+
+    let monitor_height = 1000;
+    let image_scale = (monitor_height as f32) / (height as f32);
+
+    let mut window = Window::new(
+        "FMI Viewer - press ESC to exit",
+        ((width as f32) * image_scale) as usize,
+        ((height as f32) * image_scale) as usize,
+        WindowOptions {
+            ..WindowOptions::default()
+        }
+    )
+    .unwrap_or_else(|e| {
+        panic!("{}", e);
+    });
+
+    // Limit to max ~60 fps update rate
+    window.set_target_fps(60);
+
+    while window.is_open() && !window.is_key_down(Key::Escape) {
+
+        window
+            .update_with_buffer(&buffer, width as usize, height as usize)
+            .unwrap();
+
+    }
 }
