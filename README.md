@@ -14,7 +14,7 @@ The recommended file extension for FMI is .fmi although this is not registered w
 ## How it works
 FMI uses an extremely simple format based on the concepts of the [QOI](https://qoiformat.org/) format. It encodes and decodes byte-wise with a single run across a file.
 Much like [QOI](https://qoiformat.org/), a FMI file starts with a header followed by raw binary data is compressed into chunks of either one byte or two bytes.
-There are four types of chunks total, and the types and specifications for these chunks can be found [here]().
+There are four types of chunks total, and the types and specifications for these chunks can be found [here](https://github.com/Akibaten/fast-manga-image/blob/main/fmi-specification.pdf).
 
 To demonstrate the speed of FMI decoding, I have created a demo to show it rendering video in real time from a directory filled with frames of a video in .fmi format without an actual format. Each frame is read from memory as an image, decoded, and then painted to the viewer individually. This is at 60 frames per second, but given its speed it can go several times faster than this without dropping frames. It can be found as an mp4 file in the root directory.
 
