@@ -12,7 +12,7 @@ __PNG Decoding__
 The recommended file extension for FMI is .fmi although this is not registered with MIME or reserved as a format. However, .fmi is not yet reserved in MIME by any format so collision with other files is unlikely.
 
 ## How it works
-FMI uses an extremely simple format based on the concepts of the [QOI](https://qoiformat.org/) format. It encodes and decodes byte-wise with a single run across a file.
+FMI uses an extremely simple format that is an optimization of the [QOI](https://qoiformat.org/) format. It encodes and decodes byte-wise with a single run across a file.
 Much like [QOI](https://qoiformat.org/), a FMI file starts with a header followed by raw binary data is compressed into chunks of either one byte or two bytes.
 There are four types of chunks total, and the types and specifications for these chunks can be found [here](https://github.com/Akibaten/fast-manga-image/blob/main/fmi-specification.pdf).
 
@@ -67,3 +67,8 @@ For demonstration of FMI's speed, I have also included the ability to decode fol
 This can be used like this.
 ```
 fmi video path/to/directory_containing_frames
+```
+
+## Credits
+Credit to Dominic Szablewski for inventing the QOI format in the first place. The website for QOI can be found [here](https://qoiformat.org/) and Dominic Szablewski's blog can be found [here](https://phoboslab.org/).
+
